@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #2199df;
+  text-decoration: unset;
+}
+
+ul {
+  margin-left: 1.5rem;
+  list-style: none;
+}
+
+button, input[type="submit"] {
+  border: none;
+  background: none;
+  color: unset;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, p, p , ul, ol {
+  margin: 1em 0;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+/* HEADER */
+#header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(49, 113, 223);
+}
+
+#header .title {
+  margin: 0;
+  padding: 0 2rem;
+  color: white;
+}
+#header .auth-options {
+  height: 100%;
+  display: flex;
+}
+#header .auth-options button {
+  padding: 0 1.5rem;
+  color: white;
+  font-size: 1rem;
+  background-color: rgb(43, 91, 173);
+}
+#header .auth-options button:hover {
+  background-color: rgb(68, 118, 205);
+}
+
+
+.page {
+  padding: 1rem;
+}
+
+/* FORM */
+
+.form label,
+.form input {
+  display: block;
+}
+
+.form input {
+  margin-bottom: 1rem;
+}
+
+.form input[type='text'],
+.form input[type='email'],
+.form input[type='password'] {
+  width: 100%;
+  padding: .3rem;
+  border: 1px solid #c2c2c2;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  font-size: 1.1rem;
+}
+
+.form input:focus {
+  border: 1px solid #268ee4;
+  box-shadow: inset 0px 0px 5px rgba(38, 142, 228, .5);
+  outline: none;
+}
+.form button[type='submit'] {
+  border: 1px solid #6aa051;
+  background-color: #bce4aa;
+  padding: .4em .6em;
+  border-radius: 6px;
+  font-size: 1.1rem;
+}
+
+.form label {
+  margin-bottom: .2rem;
+}
+
+
+@media screen and (max-width: 540px) {
+  #header .title {
+    padding-left: 1rem;
+    font-size: 1.4rem;
+  }
+}
